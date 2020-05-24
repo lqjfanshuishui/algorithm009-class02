@@ -44,8 +44,7 @@ class MyCircularDeque:
 
 	def getFront(self):
 		if not self.isEmpty():
-			return self.queue[self.move_forward(self
-				.head)]
+			return self.queue[self.move_forward(self.head)]
 		else:
 			return -1
 
