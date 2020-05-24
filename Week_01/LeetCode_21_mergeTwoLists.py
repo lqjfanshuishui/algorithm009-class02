@@ -1,3 +1,9 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
 class Solution:
 	def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
 		if l1 == None:
@@ -9,5 +15,5 @@ class Solution:
 			return l1
 		else:
 			l2.next = self.mergeTwoLists(l2.next , l1)
-			rerun l2
+			return l2
 
